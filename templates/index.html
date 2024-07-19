@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>九宮格計算機</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="calculator">
+        <form method="POST">
+            <input type="text" name="display" value="{{ result }}" readonly>
+            <div class="buttons">
+                <button type="submit" name="digit" value="7">7</button>
+                <button type="submit" name="digit" value="8">8</button>
+                <button type="submit" name="digit" value="9">9</button>
+                <button type="submit" name="operator" value="/">÷</button>
+                <button type="submit" name="digit" value="4">4</button>
+                <button type="submit" name="digit" value="5">5</button>
+                <button type="submit" name="digit" value="6">6</button>
+                <button type="submit" name="operator" value="*">×</button>
+                <button type="submit" name="digit" value="1">1</button>
+                <button type="submit" name="digit" value="2">2</button>
+                <button type="submit" name="digit" value="3">3</button>
+                <button type="submit" name="operator" value="-">-</button>
+                <button type="submit" name="digit" value="0">0</button>
+                <button type="submit" name="operator" value=".">.</button>
+                <button type="submit" name="calculate" value="=">=</button>
+                <button type="submit" name="operator" value="+">+</button>
+                <button type="submit" name="clear" value="C" class="clear">C</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
